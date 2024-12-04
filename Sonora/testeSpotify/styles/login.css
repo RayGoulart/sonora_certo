@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #1c0620, #2e0933, #6b146a, #4a0c66);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.container {
+    background-color: rgba(48, 0, 85, 0.13); /* Roxo mais escuro com mais transparência */
+    padding: 40px 20px; /* Adicionado espaçamento interno */
+    border-radius: 15px; /* Bordas arredondadas */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6); /* Sombra */
+    text-align: center;
+    width: 350px; /* Ajuste de largura */
+    min-height: 500px; /* Ajuste de altura mínima */
+}
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+input[type="email"], input[type="password"], .button {
+    width: 80%; /* Ajuste para ocupar 80% da largura do container */
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 25px;
+    border: none;
+    text-align: center; /* Centraliza o texto dentro dos inputs */
+}
+input[type="email"], input[type="password"] {
+    background-color: #333;
+    color: white;
+}
+.button {
+    background-color: #000000;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+.alternative-login {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px 0;
+}
+.alternative-login a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 25px;
+    color: white;
+}
+.alternative-login a img {
+    width: 20px;
+    margin-right: 10px;
+}
+.alternative-login a.google {
+    background-color: #222222;
+}
+.alternative-login a.facebook {
+    background-color: #222222;
+}
+.alternative-login a.apple {
+    background-color: #000;
+}
+.login-link {
+    margin-top: 10px;
+}
+.login-link a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+}
+#logoSonora {
+    margin-bottom: 20px;
+}
+#logoSonora img {
+    width: 60px; /* Tamanho ajustado para a logo */
+    display: block;
+    margin: 0 auto; /* Centraliza horizontalmente */
+}
+
+.register-link a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}

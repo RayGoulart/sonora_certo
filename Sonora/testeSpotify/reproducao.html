@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Music Player - Spotify Style</title>
+    <link rel="stylesheet" href="./styles/reproducao.css">
+    <script src="https://www.youtube.com/iframe_api"></script> <!-- Link correto para a API do YouTube -->
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <h1>Sonora</h1>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="home.html">Buscar</a></li>
+                <li><a href="home.html">Biblioteca</a></li>
+            </ul>
+        </div>
+
+        <!-- Main content -->
+        <div class="main-content">
+            <!-- Album Cover and Song Info -->
+            <div class="album-section">
+                <img id="album-cover" src="https://placehold.co/300x300" alt="Album Cover" class="album-cover">
+                <div class="song-info">
+                    <h2 id="song-title">Música</h2>
+                    <p id="song-artist">Artista</p>
+                </div>
+            </div>
+
+            <!-- Controls and Playback -->
+            <div class="controls">
+                <button class="control-btn" id="prev">⏮️</button>
+                <button class="play-btn" id="play-pause">⏯️</button>
+                <button class="control-btn" id="next">⏭️</button>
+            </div>
+
+            <!-- Progress Bar -->
+            <div class="progress-section">
+                <span id="current-time">0:00</span>
+                <input type="range" class="progress-bar" id="progress-bar" min="0" max="100" value="0">
+                <span id="duration">0:00</span>
+            </div>
+
+            <!-- Volume and Additional Controls -->
+            <div class="extra-controls">
+                <div class="volume-control">
+                    <button class="control-btn">🔊</button>
+                    <input type="range" class="volume-bar" id="volume-bar" min="0" max="100" value="80">
+                </div>
+                <div class="playlist-button">
+                    <button class="control-btn">💾 Save to Playlist</button>
+                </div>
+            </div>
+
+            <div id="player"></div> <!-- Div para o player do YouTube -->
+        </div>
+    </div>
+
+    <script src="./scripts/player.js"></script>
+</body>
+</html>

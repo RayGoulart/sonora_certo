@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar Playlist</title>
+    <link rel="stylesheet" href="./styles/Playlist.css">
+    
+</head>
+<body>
+    <div class="container">
+        <h1>Criar Playlist</h1>
+        <div class="image-upload" onclick="document.getElementById('fileInput').click()">
+            <div class="placeholder">
+                <span class="camera-icon">📷</span>
+            </div>
+            <img id="uploadedImage" class="uploaded-image" alt="Imagem da Playlist">
+        </div>
+        <input type="file" id="fileInput" accept="image/*" style="display: none;" onchange="handleFileSelect(event)">
+        <input type="text" placeholder="Nome da playlist" class="playlist-name">
+        <textarea placeholder="Descrição" class="playlist-description"></textarea>
+        <button class="create-button">Criar</button>
+    </div>
+
+    <script>
+        function handleFileSelect(event) {
+            const file = event.target.files[0];
+            const imgElement = document.getElementById('uploadedImage');
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    imgElement.src = e.target.result; // Define a imagem como o resultado do FileReader
+                    imgElement.style.display = 'block'; // Exibe a imagem
+                };
+                reader.readAsDataURL(file); // Lê o arquivo como uma URL de dados
+            }
+        }
+
+        // Função para permitir o arraste e soltura de arquivos
+        const imageUploadDiv = document.querySelector('.image-upload');
+        
+        imageUploadDiv.addEventListener('dragover', (event) => {
+            event.preventDefault(); // Impede o comportamento padrão
+            imageUploadDiv.style.borderColor = '#000'; // Muda a cor da borda ao arrastar
+        });
+
+        imageUploadDiv.addEventListener('dragleave', () => {
+            imageUploadDiv.style.borderColor = '#ccc'; // Restaura a cor da borda ao sair
+        });
+
+        imageUploadDiv.addEventListener('drop', (event) => {
+            event.preventDefault(); // Impede o comportamento padrão
+            const files = event.dataTransfer.files; // Obtém os arquivos arrastados
+            if (files.length > 0) {
+                const file = files[0]; // Apenas o primeiro arquivo
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    document.getElementById('uploadedImage').src = e.target.result; // Define a imagem como o resultado do FileReader
+                    document.getElementById('uploadedImage').style.display = 'block'; // Exibe a imagem
+                };
+                reader.readAsDataURL(file); // Lê o arquivo como uma URL de dados
+            }
+        });
+    </script>
+</body>
+</html>

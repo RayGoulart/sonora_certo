@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sonora - Home</title>
+    <link rel="stylesheet" href="./styles/home.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <script src="./scripts/script.js"></script>
+</head>
+<body>
+    <header>
+        <img src="./imagens/unnamed.png" alt="Logo Sonora" class="logo">
+        <div class="search-container">
+            <button class="search-icon-button">
+                <img src="./imagens/lupaCerta.png" alt="Lupa" class="search-icon">
+            </button>
+            <input type="text" placeholder="Buscar músicas, artistas ou álbuns...">
+            <button class="search-button">Buscar</button>
+        </div>
+        
+        <img id="icone_de_perfil" src="./imagens/iiicone.png" alt="Ícone de Perfil" class="profile-icon">
+    </header>
+    <br>
+    
+    <main>
+        <div id="containe_musica">
+            <div class="section-header">
+                <h1>Suas Plaslists</h1>
+                <h1 class="mostrar-tudo">mostrar tudo</h1>
+            </div>
+            <section class="music-grid" id="musicGrid">
+                <div class="music-grid"> <!-- Removendo o id do segundo music-grid -->
+                    <div class="music-item">
+                        <img src="./imagens/Playlist Sertaneja.webp" alt="Música 1" class="music-image">
+                        <p class="music-title">Sertanejo</p>
+                    </div>
+                    <div class="music-item">
+                        <img src="./imagens/internacionais.jpg" alt="Música 2" class="music-image">
+                        <p class="music-title">internacionais</p>
+                    </div>
+                    <div class="music-item">
+                        <img src="./imagens/pagode.jpg" alt="Música 3" class="music-image">
+                        <p class="music-title">Pagode</p>
+                    </div>
+                    <div class="music-item" onclick="abrirCriarPlaylist()">
+                        <img  src="./imagens/mais_certo.png" alt="Criar Playlist" class="music-image">
+                        <p class="music-title">Criar Playlist</p>
+                    </div>
+
+                    
+                </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div id="containe_musica">
+            <div class="section-header">
+                <h1>recomendado para você</h1>
+                <h1 class="mostrar-tudo">mostrar tudo</h1>
+            </div>
+            <section class="music-grid" id="musicGrid">
+                <div class="music-grid"> <!-- Removendo o id do segundo music-grid -->
+                    <div class="music-item">
+                        <img src="./imagens/coldplay.webp" alt="Música 1" class="music-image">
+                        <p class="music-title">ColdPlay- Yellow</p>
+                    </div>
+                    <div class="music-item">
+                        <img src="./imagens/me atraiu.jpg" alt="Música 2" class="music-image">
+                        <p class="music-title">Gabriela Rocha- Me atraiu</p>
+                    </div>
+                    <div class="music-item">
+                        <img src="./imagens/luiza sonza.jpg" alt="Música 3" class="music-image">
+                        <p class="music-title">Luísa Sonza- Melhor Sozinha</p>
+                    </div>
+                    <div class="music-item">
+                        <img src="./imagens/legiao urbana.jpg" alt="Música 4" class="music-image">
+                        <p class="music-title">Legião Urbana- Tempo Perdido</p>
+                    </div>
+                    <div class="music-item">
+                        <img src="./imagens/birdy.jpg" alt="Música 5" class="music-image">
+                        <p class="music-title">Birdy - People Help the People</p>
+                    </div>
+                    <div class="music-item">
+                        <img src="./imagens/billie.webp" alt="Música 6" class="music-image">
+                        <p class="music-title">Billie Eilish- Chihiro</p>
+                    </div>
+                </div>
+        </div>
+        <br> 
+        <br>
+
+    
+        <div id="containe_musica_sertaneja">
+            <div class="section-header">
+                <h1>Sertanejo</h1>
+                <h1 class="mostrar-tudo">mostrar tudo</h1>
+            </div>
+            <section class="music-grid" id="musicGrid">
+                <div class="carousel-container">
+        
+                    <div class="music-grid"> <!-- Removendo o id do segundo music-grid -->
+                        <div class="music-item">
+                            <img src="./imagens/marilia medonça.webp" alt="Música 1" class="music-image">
+                            <p class="music-title">Marilia Medonça- Todo Mundo Vai Sofrer</p>
+                        </div>
+                        <div class="music-item">
+                            <img src="./imagens/maiara e maraisa.jpg" alt="Música 2" class="music-image">
+                            <p class="music-title">Maiara e Maraisa- Medo Bobo</p>
+                        </div>
+                        <div class="music-item">
+                            <img src="./imagens/lucas lucco.jpg" alt="Música 3" class="music-image">
+                            <p class="music-title">Lucas Lucco- Destino</p>
+                        </div>
+                        <div class="music-item">
+                            <img src="./imagens/Ana castelaa.jpg" alt="Música 4" class="music-image">
+                            <p class="music-title">Ana Castela- Boiadeira</p>
+                        </div>
+                        <div class="music-item">
+                            <img src="./imagens/jorge e matheus.jpg" alt="Música 5" class="music-image">
+                            <p class="music-title">Jorge e Mateus - Os Anjos Cantam.</p>
+                        </div>
+                        <div class="music-item">
+                            <img src="./imagens/Henrique e Juliano.webp" alt="Música 6" class="music-image">
+                            <p class="music-title">Henrique e Juliano- Na Hora Da Raiva</p>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <br> 
+        <br>
+
+        <div id="containe_musica_pagode">
+            <div class="section-header">
+                <h1>Pagode</h1>
+                <h1 class="mostrar-tudo">mostrar tudo</h1>
+            </div>
+            <section class="music-grid" id="musicGrid">
+                <div class="carousel-container">
+        
+                    <div class="music-grid"> <!-- Removendo o id do segundo music-grid -->
+                        <div class="music-item">
+                            <img src="./imagens/pericles.jpg" alt="Música 1" class="music-image">
+                            <p class="music-title">Pericles- Até Que Durou.</p>
+                        </div>
+                        <div class="music-item">
+                            <img src="./imagens/download.webp" alt="Música 2" class="music-image">
+                            <p class="music-title">Zeca Pagodinho e Mauro Diniz- Frio De Uma Solidão</p>
+                        </div>
+                        <div class="music-item">
+                            <img src="./imagens/Turma do pagode.webp" alt="Música 3" class="music-image">
+                            <p class="music-title">Turma do Pagode- Lancinho</p>
+                        </div>
+                        <div class="music-item">
+                            <img src="./imagens/soorriso maroto.webp" alt="Música 4" class="music-image">
+                            <p class="music-title">Sorriso Maroto - Eu Topo</p>
+                        </div>
+                        <div class="music-item">
+                            <img src="./imagens/thiaguinho.webp" alt="Música 5" class="music-image">
+                            <p class="music-title">Thiaguinho - Sou o cara pra você</p>
+                        </div>
+                        <div class="music-item">
+                            <img src="./imagens/pixote.jpg" alt="Música 6" class="music-image">
+                            <p class="music-title">Pixote - Meu Amor.</p>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        
+
+    
+    </main>
+
+
+
+    
+    
+    
+</body>
+</html>

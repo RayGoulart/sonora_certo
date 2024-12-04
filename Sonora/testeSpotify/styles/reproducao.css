@@ -1,0 +1,77 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #1c0620, #2e0933, #6b146a, #4a0c66);
+    color: white;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    background-color: rgba(48, 0, 85, 0.9);
+    padding: 20px;
+    width: 200px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+}
+
+.sidebar h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+    cursor: pointer;
+    padding: 10px;
+    transition: background 0.3s;
+}
+
+.sidebar ul li:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.playlist {
+    margin-top: 20px;
+}
+
+.music {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.play-btn {
+    background: #1DB954; /* Cor do botão de play do Spotify */
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.play-btn:hover {
+    background: #1aa34a;
+}

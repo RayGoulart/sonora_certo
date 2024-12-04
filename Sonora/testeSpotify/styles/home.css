@@ -1,0 +1,252 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(to bottom, #4a0c66, #2e0933, #6b146a, #4a0c66);
+    color: white;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #181818;
+}
+
+.logo {
+    width: 50px;
+}
+
+.profile-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+input[type="text"] {
+    width: 300px;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    background-color: #282828;
+    color: white;
+    margin-right: 10px;
+}
+
+.search-button {
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    background-color: #535353; /* Cor verde do Spotify */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-button:hover {
+    background-color: #1aa34a; /* Verde mais claro ao passar o mouse */
+}
+
+main {
+    padding: 20px;
+    
+    
+}
+
+#containe_musica {
+    background-color: #181818;
+    padding: 20px; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    height: 380px;
+    justify-items: center;
+    align-items: center;
+    
+}
+
+h1{
+    height: 20px;
+    font-size: large;
+}
+
+
+
+
+
+.music-grid {
+    display: flex; /* Exibe os itens em linha */
+    
+}
+
+.music-item {
+    width: 220px; /* Largura do item */
+    margin: 10px; /* Espaço entre os itens */
+    text-align: center; /* Centraliza o texto */
+}
+
+.music-image {
+    width: 100%;
+    height: 100%;
+    max-height: 200px;  /* Define uma altura máxima para que as imagens não fiquem muito grandes */
+    object-fit: contain;  /* Mantém a proporção da imagem e ajusta dentro do contêiner */
+    border-radius: 10px;
+}
+
+
+
+
+
+
+.music-item:hover {
+    transform: scale(1.05); /* Efeito de crescimento ao passar o mouse */
+}
+
+.music-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #121212;
+    color: white;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Garante que o body ocupe a altura total da janela */
+    height: 100vh; /* Ajusta a altura para ocupar toda a tela */
+    overflow-y: auto; /* Permite rolagem vertical */
+}
+
+main {
+    flex: 1; /* Faz o main expandir para ocupar o espaço restante */
+    padding: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #222;
+    margin-top: auto; /* Empurra o footer para o final da página */
+}
+
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+
+.mostrar-tudo {
+    font-size: 16px;
+    font-weight: normal;
+    color: #af0caf;
+    cursor: pointer;
+    border-bottom: 2px solid #af0caf; /* Adiciona a linha */
+    padding-bottom: 2px; /* Dá um pequeno espaço entre o texto e a linha */
+}
+
+.mostrar-tudo:hover {
+    text-decoration: none; /* Remove o sublinhado padrão */
+    border-bottom: 2px solid #af0caf; /* Muda a cor da linha ao passar o mouse */
+}
+
+
+.search-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.search-icon-button {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    left: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.search-icon {
+    width: 20px;
+    height: 20px;
+}
+
+input[type="text"] {
+    width: 300px;
+    padding: 10px 10px 10px 40px; /* Espaço extra à esquerda para a lupa */
+    border-radius: 20px;
+    border: none;
+    background-color: #282828;
+    color: white;
+}
+
+.search-button {
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    background-color: #af0caf;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-button:hover {
+    background-color: #541ab3;
+}
+
+
+
+ 
+
+main {
+    padding: 20px;
+    height: auto; /* Permite que o conteúdo do main expanda conforme necessário */
+    min-height: 100vh; /* Garante que o main ocupe no mínimo a altura total da tela */
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #222;
+    position: relative; /* Remove o "fixo" para permitir rolagem */
+}
+
+#containe_musica_sertaneja {
+    background-color: #181818;
+    padding: 20px; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    height: 380px;
+    justify-items: center;
+    align-items: center;
+    
+}
+
+
+
+#containe_musica_pagode {
+    background-color: #181818;
+    padding: 20px; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    height: 380px;
+    justify-items: center;
+    align-items: center;
+    
+}
+
+
+
+
+
